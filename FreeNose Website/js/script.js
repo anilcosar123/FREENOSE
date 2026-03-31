@@ -75,33 +75,6 @@ $(document).ready(function($) {
 
 	}
 
-	/*-------------------------------------------------*/
-	/* =  header height fix
-	/*-------------------------------------------------*/
-	var content = $('#content');
-	content.imagesLoaded( function(){
-		var bodyHeight = $(window).outerHeight(),
-		containerHeight = $('.inner-content').outerHeight(),
-		headerHeight = $('header');
-
-		if( bodyHeight > containerHeight ) {
-			headerHeight.css('height',bodyHeight);
-		} else {
-			headerHeight.css('height',containerHeight);	
-		}
-	});
-
-	winDow.bind('resize', function(){
-		var bodyHeight = $(window).outerHeight(),
-		containerHeight = $('.inner-content').outerHeight(),
-		headerHeight = $('header');
-
-		if( bodyHeight > containerHeight ) {
-			headerHeight.css('height',bodyHeight);
-		} else {
-			headerHeight.css('height',containerHeight);	
-		}
-	});
 
 	/* ---------------------------------------------------------------------- */
 	/*	nice scroll
